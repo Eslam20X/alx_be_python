@@ -27,16 +27,17 @@ match priority:
     case "high":
         if time == "yes":
             print(reminder + " task that requires immediate attention today!")
-        elif time == "no":
+        else:
             print(reminder + " should start it once you completely finish high priority time bounded tasks")
+    
     case "medium":
         if time == "yes":
             print(reminder + " ,Start after high priority Non-Time-Bound tasks")
-        elif time == "no":
-            print(reminder + " , start after low priority tasks")
+        else:
+            print(reminder + " ,Start after low priority tasks")
+    
     case "low":
         if time == "yes":
             print(reminder + " As it has a deadline it should be done before mediume Non-Time-Bound tasks")
-        elif time == "no":
+        else:
             print(reminder + " Consider completing it when you have free time.")
-            
