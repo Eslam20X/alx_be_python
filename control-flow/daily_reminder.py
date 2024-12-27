@@ -26,18 +26,18 @@ reminder = f"'{task}' is a {priority} priority task,"
 match priority:
     case "high":
         if time_bound == "yes":
-            print(reminder + " task that requires immediate attention today!")
+            print(f"'{task}' is a {priority} priority task, Task that requires immediate attention today!")
         else:
-            print(reminder + " should start it once you completely finish high priority time bounded tasks")
+            print(f"'{task}' is a {priority} priority task, Should start it once you completely finish high priority time bounded tasks")
     
     case "medium":
         if time_bound == "yes":
-            print(reminder + " ,Start after high priority Non-Time-Bound tasks")
+            print(f"'{task}' is a {priority} priority task, Start after high priority Non-Time-Bound tasks")
         else:
-            print(reminder + " ,Start after low priority tasks")
+            print(f"'{task}' is a {priority} priority task, Start after low priority tasks")
     
     case "low":
         if time_bound == "yes":
-            print(reminder + " As it has a deadline it should be done before mediume Non-Time-Bound tasks")
+            print(f"'{task}' is a {priority} priority task, As it has a deadline it should be done before mediume Non-Time-Bound tasks")
         else:
-            print(reminder + " Consider completing it when you have free time.")
+            print(f"'{task}' is a {priority} priority task, Consider completing it when you have free time.")
