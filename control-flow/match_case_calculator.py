@@ -16,6 +16,8 @@ match(operation):
         else:
             result = num1 / num2
             
-if num2 != 0:
+if operation == "/" and num2 == 0:
+    ...
+else:
     print(f"The result is {result}.")
         
