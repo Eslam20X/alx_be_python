@@ -3,7 +3,8 @@ num2 = int(input("Enter the second number: "))
 operation = input("Choose the operation (+, -, *, /): ")
 result = 0
 error = 0
-match(operation):
+
+match operation:
     case "+":
         result = num1 + num2
     case "-":
